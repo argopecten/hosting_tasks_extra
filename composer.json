@@ -1,0 +1,31 @@
+{
+    "name": "drupal/hosting_tasks_extra",
+    "description": "This module extends Aegir with some additional tasks.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name":      "Aegir maintainers",
+            "homepage":  "http://docs.aegirproject.org/en/3.x/community/core-team/"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/hosting_deploy",
+        "docs": "http://docs.aegirproject.org/"
+    },
+    "repositories": {
+          "drupal/hosting": {
+              "type": "vcs",
+              "url":  "https://github.com/argopecten/aegir-hosting"
+          },
+          "drupal": {
+                "type": "composer",
+                "url": "https://packages.drupal.org/7"
+          }
+    },
+    "require": {
+        "drupal/hosting": "^3.193"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
