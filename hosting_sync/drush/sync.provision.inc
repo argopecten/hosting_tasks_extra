@@ -236,7 +236,7 @@ function drush_provision_sync($source = NULL, $destination = NULL) {
       provision_backend_invoke($destination, 'cache-clear all');
       provision_backend_invoke($destination, 'cache-clear all');
     }
-    elseif (drush_drupal_major_version(d($destination)->root) == 8) {
+    elseif (drush_drupal_major_version(d($destination)->root) >= 8) {
       provision_backend_invoke($destination, 'cache-rebuild');
     }
     else {
